@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a=8,b=14;
+	int x,y,z;
+	x=a&b;
+	y=a|b;
+	z=a^b;
+	printf("%d",x);
+	printf("\n%d",y);
+	printf("\n%d",z);
+}
