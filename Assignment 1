@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a=24;
+	int b=64;
+	int x=a++;
+	int y=--x+b++;
+	printf("a=%d",a);
+	printf("\nb=%d",b);
+	printf("\nx=%d",x);
+	printf("\ny=%d",y);
+}
