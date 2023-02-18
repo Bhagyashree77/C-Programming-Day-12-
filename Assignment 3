@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	char empname[20];
+	int empno,empsal,empannualsal;
+	float tax,gst,incometax;
+	printf("empname:\n");
+	scanf("%s",&empname);
+	printf("empno:\n");
+	scanf("%d",&empno);
+	printf("empsal:\n");
+	scanf("%d",&empsal);
+	empannualsal=empsal*12;
+	if(empannualsal>5000000)
+	tax=empannualsal*20/100;
+	else if(empannualsal>3000000)
+	tax=empannualsal*15/100;
+	else if(empannualsal>1000000)
+	tax=empannualsal*10/100;
+	else if(empannualsal>700000)
+	tax=empannualsal*7/100;
+	else if(empannualsal>500000)
+	tax=empannualsal*5/100;
+	else if(empannualsal>300000)
+	tax=empannualsal*3/100;
+	else if(empannualsal<300000)
+	tax=0;
+    gst=tax*18/100;
+    incometax=tax+gst;
+    printf("empannualsal=%d\ntax=%.0f\ngst=%.0f\nincometax=%.0f",empannualsal,tax,gst,incometax);
+}
